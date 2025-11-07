@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:social_media_clone/model/userdata.dart';
-import 'package:social_media_clone/views/friendlist.dart';
-import 'package:social_media_clone/views/infoheader.dart';
-import 'package:social_media_clone/views/main.header';
-import 'package:social_media_clone/views/postlist.dart';
+import 'package:social_media_clone/view/friendlist.dart';
+import 'package:social_media_clone/view/infoheader.dart';
+import 'package:social_media_clone/view/mainheader.dart';
+import 'package:social_media_clone/view/postlist.dart';
 
 class SocialMedia extends StatefulWidget {
   const SocialMedia({super.key});
 
   @override
-  State<SocialMedia> createState() => _SocialMediaState();
+  State<SocialMedia> createState() => _SocialmediaState();
 }
 
-class _SocialmediaState extends State<Socialmedia> {
+class _SocialmediaState extends State<SocialMedia> {
   Userdata userdata = Userdata();
 
   var followTxtStyle = const TextStyle (
@@ -38,14 +38,15 @@ class _SocialmediaState extends State<Socialmedia> {
           Infoheader(userdata: userdata),
           Friendlist(userdata: userdata),
           const SizedBox (height: 20),
-          Padding(
-            padding: const EdgeInsets.only(left: 8.0),
-            child: Row(children: [Text('Posts', style: followTxtStyle)]),
+          Padding(padding:
+          const EdgeInsets.only(left: 8.0),
+          child: Row(children:
+          [Text('Posts', style: followTxtStyle)]),
           ),
           const SizedBox (height: 20),
           Postlist(userdata: userdata),
-          ],
-        ),
-      );
+        ],
+      ),
+    );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package: social_media_clone/auth/login.dart';
+import 'package:social_media_clone/auth/login.dart';
 
 
 void main() {
@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),

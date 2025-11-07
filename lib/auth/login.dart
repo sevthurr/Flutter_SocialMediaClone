@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package: social_media_clone/auth/login.dart';
+import 'package:social_media_clone/auth/login.dart';
+import 'package:social_media_clone/socialmedia.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});
@@ -29,13 +30,13 @@ class _LoginFormState extends State<LoginForm> {
   void checkLogin(username, password) {
     setState(() {
       if (username =="") {
-        errormessage: "Please enter your username.";
+        errormessage= "Please enter your username.";
         isError = true;
       } else if (password =="") {
-        errormessage: "Please enter your password.";
+        errormessage= "Please enter your password.";
         isError = true;
       } else {
-        errormessage: "Login successful!";
+        errormessage= "Login successful!";
         isError = false;
       }
     });
@@ -55,20 +56,20 @@ class _LoginFormState extends State<LoginForm> {
                 children: [
                   Image.asset(
                     'assets/logo.png',
-                    height: 48,
-                    width: 48,
+                    height: 80,
+                    width: 80,
                   ),
-                  const SizedBox(width: 12),
-                  Text('FriendsGram', style: txtstyle),
+                  const SizedBox(width: 10),
+                  Text('Instagram', style: txtstyle),
                 ],
               ),
-              SizedBox(height: 15),
+              SizedBox(height: 10),
               TextField(
                 controller: usernameController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Enter Username',
-                  predixIcon: Icon(Icons.person),
+                  prefixIcon: Icon(Icons.person),
                 ),
               ),
               const SizedBox(height: 15),
@@ -83,7 +84,7 @@ class _LoginFormState extends State<LoginForm> {
               ),
               SizedBox(height: 15),
               ElevatedButton(
-                style: ElevatedButton.styleForm(
+                style: ElevatedButton.styleFrom(
                   minimumSize: const Size.fromHeight(50),
                   backgroundColor: Colors.blue,
                 ),
