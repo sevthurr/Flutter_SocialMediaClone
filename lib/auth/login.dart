@@ -45,6 +45,9 @@ class _LoginFormState extends State<LoginForm> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Mayugba Activity 6"),
+      ),
       body: Center(
         child: Container(
           margin: const EdgeInsets.symmetric(horizontal: 25),
