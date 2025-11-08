@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:social_media_clone/auth/login.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:social_media_clone/socialmedia.dart';
 
 class LoginForm extends StatefulWidget {
@@ -46,7 +46,7 @@ class _LoginFormState extends State<LoginForm> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Mayugba Activity 6"),
+        title: Text("Mayugba Activity 7"),
       ),
       body: Center(
         child: Container(
@@ -111,24 +111,24 @@ class _LoginFormState extends State<LoginForm> {
   }
 }
 
-var txtstyle = const TextStyle(
+var txtstyle = GoogleFonts.poppins(
   fontWeight: FontWeight.bold,
   letterSpacing: 2,
   fontSize: 38,
 );
 
-var registertxtstyle = const TextStyle(
+var registertxtstyle = GoogleFonts.poppins(
   fontWeight: FontWeight.bold,
   letterSpacing: 2,
   fontSize: 14,
 );
-var errortxtstyle = const TextStyle(
+var errortxtstyle = GoogleFonts.poppins(
   fontWeight: FontWeight.bold,
   letterSpacing: 1,
   fontSize: 14,
   color: Colors.red,
 );
-var txtstyle2 = const TextStyle(
+var txtstyle2 = GoogleFonts.poppins(
   fontWeight: FontWeight.bold,
   letterSpacing: 2,
   fontSize: 24,

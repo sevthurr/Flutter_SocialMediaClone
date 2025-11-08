@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:social_media_clone/model/usercomment.dart';
 import 'package:social_media_clone/model/userdata.dart';
 import 'package:social_media_clone/model/userpost.dart';
@@ -9,10 +10,10 @@ class ProfileView extends StatelessWidget {
   final Userpost userPost;
   final Userdata userData = Userdata();
 
-  var nametxtStyle = const TextStyle(fontSize: 18, fontWeight: FontWeight.bold);
-  var boldtxtStyle = const TextStyle(fontWeight: FontWeight.bold);
+  var nametxtStyle = GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.bold);
+  var boldtxtStyle = GoogleFonts.poppins(fontWeight: FontWeight.bold);
 
-  var boldtxtStyle1 = const TextStyle (
+  var boldtxtStyle1 = GoogleFonts.poppins (
     fontWeight: FontWeight.bold,
     fontSize: 16,
   );
@@ -194,7 +195,7 @@ class ProfileView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Mayugba - Activity 6"),
+        title: Text("Mayugba - Activity 7"),
         backgroundColor: Colors.transparent,
         bottomOpacity: 0.0,
         elevation: 0.0,

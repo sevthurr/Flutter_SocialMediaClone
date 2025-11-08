@@ -11,8 +11,8 @@ class Userdata {
       time: '2 hrs ago',
       postcontent: 'What do you think of this dress?',
       postimg: 'assets/rachel_post.jpg',
-      numcomments: '24',
       numshare: '5',
+      comments: [],
       isLiked: true,
     ),
     Userpost(
@@ -21,8 +21,8 @@ class Userdata {
       time: '5 hrs ago',
       postcontent: 'Pivot!',
       postimg: 'assets/ross_post.jpg',
-      numcomments: '15',
       numshare: '3',
+      comments: [],
       isLiked: true,
     ),
     Userpost(
@@ -31,8 +31,8 @@ class Userdata {
       time: '1 day ago',
       postcontent: 'Oh, my eyes! My eyes!',
       postimg: 'assets/phoebe_post.jpg',
-      numcomments: '30',
       numshare: '10',
+      comments: [],
       isLiked: false,
     ),
     Userpost(
@@ -41,8 +41,8 @@ class Userdata {
       time: '2 days ago',
       postcontent: 'That was perfection',
       postimg: 'assets/chandler_post.jpg',
-      numcomments: '45',
       numshare: '12',
+      comments: [],
       isLiked: false,
     ),
     Userpost(
@@ -51,8 +51,8 @@ class Userdata {
       time: '3 days ago',
       postcontent: 'I wanted it to look like Demi Moore',
       postimg: 'assets/monica_post.jpg',
-      numcomments: '50',
       numshare: '15',
+      comments: [],
       isLiked: true,
     ),
     Userpost(
@@ -61,8 +61,8 @@ class Userdata {
       time: '1 week ago',
       postcontent: 'How you doin\'?',
       postimg: 'assets/joey_post.jpg',
-      numcomments: '60',
       numshare: '20',
+      comments: [],
       isLiked: false,
     ),
   ];

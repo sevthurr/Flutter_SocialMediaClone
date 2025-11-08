@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:social_media_clone/model/userdata.dart';
 import 'package:social_media_clone/view/friendlist.dart';
 import 'package:social_media_clone/view/infoheader.dart';
@@ -15,7 +16,7 @@ class SocialMedia extends StatefulWidget {
 class _SocialmediaState extends State<SocialMedia> {
   Userdata userdata = Userdata();
 
-  var followTxtStyle = const TextStyle (
+  var followTxtStyle = GoogleFonts.poppins (
     fontSize: 20,
     fontWeight: FontWeight.bold,
   );
@@ -31,21 +32,22 @@ class _SocialmediaState extends State<SocialMedia> {
           icon: Icon(Icons.arrow_back),
         ),
       ),
-      body: ListView(
-        shrinkWrap: true,
-        children: [
-          Mainheader(userdata: userdata),
-          Infoheader(userdata: userdata),
-          Friendlist(userdata: userdata),
-          const SizedBox (height: 20),
-          Padding(padding:
-          const EdgeInsets.only(left: 8.0),
-          child: Row(children:
-          [Text('Posts', style: followTxtStyle)]),
-          ),
-          const SizedBox (height: 20),
-          Postlist(userdata: userdata),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Mainheader(userdata: userdata),
+            Infoheader(userdata: userdata),
+            Friendlist(userdata: userdata),
+            const SizedBox (height: 20),
+            Padding(padding:
+            const EdgeInsets.only(left: 8.0),
+            child: Row(children:
+            [Text('Posts', style: followTxtStyle)]),
+            ),
+            const SizedBox (height: 20),
+            Postlist(userdata: userdata),
+          ],
+        ),
       ),
     );
   }

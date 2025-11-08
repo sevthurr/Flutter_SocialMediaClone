@@ -1,11 +1,13 @@
+import 'usercomment.dart';
+
 class Userpost {
   final String userimg;
   final String username;
   final String time;
   final String postcontent;
   final String postimg;
-  final String numcomments;
   final String numshare;
+  List<Usercomment> comments;
   bool isLiked;
 
   Userpost ({
@@ -14,8 +16,8 @@ class Userpost {
     required this.time,
     required this.postcontent,
     required this.postimg,
-    required this.numcomments,
     required this.numshare,
+    this.comments = const [],
     this.isLiked = false,
   });
 }

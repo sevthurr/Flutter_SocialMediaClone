@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:social_media_clone/model/friend.dart';
 import '../model/userdata.dart';
 
@@ -8,7 +9,7 @@ class Friendlist extends StatelessWidget {
 
   final Userdata userdata;
 
-  var followTxtStyle = const TextStyle (
+  var followTxtStyle = GoogleFonts.poppins (
     fontSize: 20,
     fontWeight: FontWeight.bold,
   );
@@ -17,7 +18,7 @@ class Friendlist extends StatelessWidget {
     child: Column(
       children: [
         Expanded(child: Image.asset(friend.img)),
-        Padding(padding: const EdgeInsets.all(8.0), child: Text(friend.name)),
+        Padding(padding: const EdgeInsets.all(8.0), child: Text(friend.name, style: GoogleFonts.poppins())),
       ],
     ),
   );
@@ -46,7 +47,7 @@ class Friendlist extends StatelessWidget {
         ),
         Padding (
           padding: const EdgeInsets.only(left: 8.0),
-          child: Row(children: [Text('${userdata.friendList.length} friends')]),
+          child: Row(children: [Text('${userdata.friendList.length} friends', style: GoogleFonts.poppins())]),
         ),
         const SizedBox (height: 10),
         SizedBox(height: 380, child: friendListGrid()),

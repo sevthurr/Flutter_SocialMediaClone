@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../model/userdata.dart';
 
 class Infoheader extends StatelessWidget{
   Infoheader({super.key, required this.userdata});
   final Userdata userdata;
 
-  var followTxtStyle = const TextStyle (
+  var followTxtStyle = GoogleFonts.poppins (
     fontSize: 20,
     fontWeight: FontWeight.bold,
   );
